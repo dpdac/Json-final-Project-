@@ -1,0 +1,89 @@
+{
+  "projects": [
+    {
+      "ID": 1,
+      "project_name": "High Speed Rail Corridor",
+      "location": {
+        "province": "Ontario",
+        "city": "Toronto"
+      },
+      "project_type": "Rail",
+      "org": {
+        "org_name": "CN Rail",
+        "org_type": "contractor"
+      },
+      "start_date": "05-06-2032",
+      "end_date": "01-01-2040",
+      "budget": 107000000,
+      "project_status": "Planning"
+    },
+    {
+      "ID": 2,
+      "project_name": "Northern Remote Community Road Access",
+      "location": {
+        "province": "Ontario",
+        "city": "Thunder Bay"
+      },
+      "project_type": "Transportation",
+      "org": {
+        "org_name": "Infrastructure Canada",
+        "org_type": "Government"
+      },
+      "start_date": "01-05-2037",
+      "end_date": "01-06-2045",
+      "budget": 13700000,
+      "project_status": "Planning"
+    },
+    {
+      "ID": 3,
+      "project_name": "Urban Light Rail Expansion",
+      "location": {
+        "province": "Alberta",
+        "city": "Calgary"
+      },
+      "project_type": "Rail",
+      "org": {
+        "org_name": "Calgary Transit",
+        "org_type": "Government"
+      },
+      "start_date": "05-06-2042",
+      "end_date": "01-01-2050",
+      "budget": 26000000,
+      "project_status": "Planning"
+    },
+    {
+      "ID": 4,
+      "project_name": "Flood Protection Systems",
+      "location": {
+        "province": "Manitoba",
+        "city": "Winnipeg"
+      },
+      "project_type": "Environment",
+      "org": {
+        "org_name": "Environment and Climate Change Canada",
+        "org_type": "Government"
+      },
+      "start_date": "05-06-2038",
+      "end_date": "01-01-2050",
+      "budget": 728000000,
+      "project_status": "Planning"
+    },
+    {
+      "ID": 5,
+      "project_name": "Renewable Energy Grid Upgrade",
+      "location": {
+        "province": "Ontario",
+        "city": "Toronto"
+      },
+      "project_type": "Energy",
+      "org": {
+        "org_name": "Hydro-One",
+        "org_type": "contractor"
+      },
+      "start_date": "03-11-2028",
+      "end_date": "01-02-2037",
+      "budget": 890000000,
+      "project_status": "Planning"
+    }
+  ]
+}
