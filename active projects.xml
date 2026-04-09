@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item>
+		<ID>6</ID>
+		<project_name>Arctic Deep-Water Port</project_name>
+		<location>
+			<province>Nunavut</province>
+			<city>Iqaluit</city>
+		</location>
+		<project_type>Infastructure</project_type>
+		<org>
+			<org_name>Port Creations.co</org_name>
+			<org_type>contractor</org_type>
+			<org_email>PortCreations@gmail.ca</org_email>
+		</org>
+		<start_date>05/09/23</start_date>
+		<end_date>04/02/27</end_date>
+		<budget>57000000</budget>
+		<project_status>active</project_status>
+	</item>
+	<item>
+		<ID>7</ID>
+		<project_name>Affordable Housing Development</project_name>
+		<location>
+			<province>British Columbia</province>
+			<city>Vancouver</city>
+		</location>
+		<project_type>Housing</project_type>
+		<org>
+			<org_name>BC Housing Group</org_name>
+			<org_type>contractor</org_type>
+			<org_email>BC_Housing@hotmail.com</org_email>
+		</org>
+		<start_date>01/28/24</start_date>
+		<end_date>07/21/28</end_date>
+		<budget>20000000</budget>
+		<project_status>active</project_status>
+	</item>
+	<item>
+		<ID>8</ID>
+		<project_name>Highway Twinning Project</project_name>
+		<location>
+			<province>NA</province>
+			<city>NA</city>
+		</location>
+		<project_type>infastructure</project_type>
+		<org>
+			<org_name>Road Developers of Canada</org_name>
+			<org_type>contractors</org_type>
+			<org_email>RoadDevsCan@gmail.ca</org_email>
+		</org>
+		<start_date>05/17/22</start_date>
+		<end_date>10/11/30</end_date>
+		<budget>330000000</budget>
+		<project_status>active</project_status>
+	</item>
+	<item>
+		<ID>9</ID>
+		<project_name>Water Treatment Plant Upgrades</project_name>
+		<location>
+			<province>Ontario</province>
+			<city>Kingston</city>
+		</location>
+		<project_type>environmental</project_type>
+		<org>
+			<org_name>Ontario Clean Water Agency</org_name>
+			<org_type>government</org_type>
+			<org_email>OntCleanWater@gmail.ca</org_email>
+		</org>
+		<start_date>02/25/23</start_date>
+		<end_date>05/09/27</end_date>
+		<budget>50000000</budget>
+		<project_status>active</project_status>
+	</item>
+	<item>
+		<ID>10</ID>
+		<project_name>EV Charging Infastructure Network</project_name>
+		<location>
+			<province>Ontario</province>
+			<city>Toronto</city>
+		</location>
+		<project_type>infastructure</project_type>
+		<org>
+			<org_name>EV installers.co</org_name>
+			<org_type>contractor</org_type>
+			<org_email>EVinstallers@hotmail.com</org_email>
+		</org>
+		<start_date>12/15/25</start_date>
+		<end_date>08/01/28</end_date>
+		<budget>120000000</budget>
+		<project_status>active</project_status>
+	</item>
+</items>
