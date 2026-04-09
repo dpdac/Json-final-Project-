@@ -31,20 +31,18 @@ CREATE TABLE Projects (
     Budget INT,
     Project_Status ENUM ('Planned', 'In-Progress', 'Completed') NOT NULL,
     Location_ID INT,
-    FOREIGN KEY (Location_ID) REFERENCES Locations(Location_ID)
+    FOREIGN KEY (Location_ID) REFERENCES Locations(Location_ID) ON DELETE CASCADE
     );
     
 CREATE TABLE Project_Assignment (
 	Assignment_ID INT PRIMARY KEY AUTO_INCREMENT,
     Project_ID INT,
     Org_ID INT,
-    FOREIGN KEY (Project_ID) REFERENCES Projects(Project_ID),
-    FOREIGN KEY (Org_ID) REFERENCES Contractor(Org_ID)
+    FOREIGN KEY (Project_ID) REFERENCES Projects(Project_ID) ON DELETE CASCADE,
+    FOREIGN KEY (Org_ID) REFERENCES Contractor(Org_ID) ON DELETE CASCADE
 	);
 
 -- To verify all tables have been made properly, run the following line
-SET sql_safe_updates = 0;
-SET sql_safe_updates = 1;
 SHOW TABLES;
 
 -- This large block populates the tables, data can be added into each table
@@ -101,6 +99,11 @@ INSERT INTO Project_Assignment (Project_ID, Org_ID) VALUES
 -- which has certain conditions. By the nature of this database a join will
 -- likely be necessary, for most of them, below are some examples
 
+-- For certain queries, like deleting or updating data, safe updates will need to be disabled
+-- setting it 0 means off, 1 means on, please make sure to re-enable it afterwards
+SET sql_safe_updates = 0;
+SET sql_safe_updates = 1;
+
 -- You can check all data in a specific table with the queries in this block
 SELECT * FROM Locations;
 SELECT * FROM Contractor;
@@ -136,3 +139,8 @@ SELECT Locations.Province, SUM(Projects.Budget)
 FROM Locations
 INNER JOIN Projects ON Projects.Location_ID = Locations.Location_ID
 GROUP BY Locations.Province;
+
+-- This will delete a certain item from list based on the condition
+-- In this case project 1 was just an example and we don't want it clogging the database
+DELETE FROM Projects
+WHERE Project_Name = 'Sample';
