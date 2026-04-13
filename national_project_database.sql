@@ -1,3 +1,7 @@
+-- This database is seperated into blocks which server certain functions
+-- You can either run everything at once or block by block
+-- If running block by block run each semi-colon in order
+
 -- This block creates the database and sets it to be used
 CREATE DATABASE nation_is;
 USE nation_is;
@@ -101,8 +105,8 @@ INSERT INTO Project_Assignment (Project_ID, Org_ID) VALUES
 
 -- For certain queries, like deleting or updating data, safe updates will need to be disabled
 -- setting it 0 means off, 1 means on, please make sure to re-enable it afterwards
-SET sql_safe_updates = 0;
 SET sql_safe_updates = 1;
+SET sql_safe_updates = 0;
 
 -- You can check all data in a specific table with the queries in this block
 SELECT * FROM Locations;
@@ -116,7 +120,7 @@ FROM Locations
 INNER JOIN Projects ON Locations.Location_ID = Projects.Location_ID
 WHERE Province = 'Ontario';
 
--- This query shows all active projects
+-- This query shows all 'in-progress' projects
 SELECT Project_Name, Project_Status
 FROM Projects
 WHERE Project_Status = 'In-Progress';
@@ -132,7 +136,7 @@ GROUP BY Contractor.Org_Name;
 -- and to make sure this works
 UPDATE Projects
 SET Project_Status = 'Completed'
-WHERE Project_ID = 1;
+WHERE Project_Name = 'Sample';
 
 -- This query calculates the total budget of all projects groups by province
 SELECT Locations.Province, SUM(Projects.Budget)
